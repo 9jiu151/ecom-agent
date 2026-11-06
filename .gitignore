@@ -1,0 +1,16 @@
+node_modules/
+web/node_modules/
+web/dist/
+outputs/
+uploads/
+data/
+scripts/shots/
+shots/
+*.log
+.DS_Store
+datacenter-tycoon/
+skills-explainer/
+tools/
+assets/
+*.mp4
+*.zip
