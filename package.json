@@ -1,0 +1,23 @@
+{
+  "name": "ecom-agent",
+  "version": "1.0.0",
+  "private": true,
+  "description": "电商全流程智能体 - AI 赋能电商全流程场景化应用",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "concurrently -n server,web -c cyan,green \"node server/index.js\" \"npm run dev --prefix web\"",
+    "dev:server": "node server/index.js",
+    "dev:web": "npm run dev --prefix web",
+    "build": "npm run build --prefix web",
+    "start": "node server/index.js",
+    "setup": "npm install && npm install --prefix web"
+  },
+  "dependencies": {
+    "compression": "^1.8.2",
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
